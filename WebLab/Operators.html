@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Operators</title>
+    <style>
+    body{
+      width: 100%;
+      font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+      font-size: 1.6rem;
+      line-height: 1.5625em;
+      color: #fff;
+      background: #0d0d0d url('r6-siege-v3-bg.jpg') 0 0;
+      margin:0;
+      padding: 0;
+      }
+
+      nav {
+        background: black;
+      }
+      nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+      }
+      nav ul:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      nav a {
+        text-decoration: none;
+        display: block;
+        transition: .3s linear;
+      }
+      .topmenu > li {
+        float: left;
+        position: relative;
+        border-left: 1px solid black;
+      }
+      .topmenu > li:first-child {border-left: 0;}
+      .topmenu > li > a {
+        padding: 20px 30px;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #FEFDFD;
+        letter-spacing: 2px;
+      }
+      .topmenu > li > a.active,
+      .submenu a:hover {color: #ddbe86;}
+      .topmenu .fa,
+      .submenu .fa {
+        margin-left: 5px;
+        color: inherit;
+      }
+      .submenu {
+        position: absolute;
+        z-index: 5;
+        min-width: 200px;
+        background: white;
+        border-top: 1px solid #CBCBCC;
+        border-left: 1px solid #CBCBCC;
+        border-right: 1px solid #CBCBCC;
+        visibility: hidden;
+        opacity: 0;
+        transform-origin: 0% 0%;
+        transform: rotateX(-90deg);
+        transition: .3s linear;
+      }
+      .submenu li {position: relative;}
+      .submenu li a {
+        color: #282828;
+        padding: 10px 20px;
+        font-size: 13px;
+        border-bottom: 1px solid #CBCBCC;
+      }
+      .submenu .submenu {
+        position: absolute;
+        left: 100%;
+        top: -1px;
+        transition: .3s linear;
+      }
+      nav li:hover > .submenu {
+        transform: rotateX(0deg);
+        visibility: visible;
+        opacity: 1;
+
+      }
+
+      a:hover{
+        background: transparent;
+      }
+
+     .ramka{
+
+       border-left: 2px solid #ccc; /* Параметры линии */
+         margin-left: 20px; /* Отступ слева */
+         padding-left: 10px; /* Расстояние от линии до текста */
+     }
+
+     .operatorlogo{
+       padding-left: 100px;
+     }
+
+
+     h4{
+       font-family: Arial, sans-serif ;
+       text-align: center;
+       margin-top: 1px;
+     }
+
+     .logo{
+       padding-top:15px;
+       padding-left:10px;
+     }
+
+     .footer{
+       text-align: center;
+       font-size: 1rem;
+       border:1px solid white inherit;
+
+     }
+
+
+
+     h1{
+       text-align: center;
+     }
+
+     .defendlogo{
+       padding-top:30px;
+     }
+
+
+     </style>
+     <header>
+       <div>
+         <nav>
+           <ul class="topmenu">
+             <li class="logo">
+                 <span><img src="r6-logo.png"/></span>
+             </li>
+             <li><a href="Main.html" class="active">Main<span class="fa fa-angle-down"></span></a></li>
+             <li><a href="">Matches</a>
+               <ul class="submenu">
+                 <li><a href="">something1</a></li>
+                 <li><a href="">something2<span class="fa fa-angle-down"></span></a></li>
+                 <li><a href="">something3</a></li>
+               </ul>
+             </li>
+             <li><a href="">News</a></li>
+             <li><a href=" Operators.html " target="_blank">Operators</a></li>
+             <li><a href="">Admin</a></li>
+           </ul>
+         </nav>
+       </div>
+     </header>
+     <content>
+       <h1>OPERATORS</h1>
+       <h3><p style="text-align:center">
+         <img class="attacklogo" src="Attacker.png" />Attacker
+       </p></h3>
+       <div>
+         <p>
+          <a href=""><img class="operatorlogo" src="Maverick.png" width="263px" height="265px" /></a>
+          <a href=""><img class="operatorlogo" src="Dokaebi.png" width="263px" height="265px" /></a>
+          <a href=""><img class="operatorlogo" src="Glaz.png" width="263px" height="265px" /></a>
+          <a href=""><img class="operatorlogo" src="Glaz1.png" width="263px" height="265px" /></a>
+         </p>
+       </div>
+       <div>
+         <p>
+             <a href=""><img class="operatorlogo" src="Zofia.png" width="263px" height = "265px" /></a>
+             <a href=""><img class="operatorlogo" src="Lion.png" width="263px" height = "265px" /></a>
+             <a href=""><img class="operatorlogo" src="Buck.png" width="263px" height = "265px" /></a>
+             <a href=""><img class="operatorlogo" src="Blackbeard.png" width="263px" height = "265px" /></a>
+         </p>
+       </div>
+       <h3><p style="text-align:center">
+         <img class="defendlogo" src="Deffender.png" />Defender
+       </p></h3>
+       <div>
+         <p>
+           <a href=""><img class="operatorlogo" src="Mira.png" width="263px" height = "265px" /></a>
+           <a href=""><img class="operatorlogo" src="Caveira.png" width="263px" height = "265px" /></a>
+           <a href=""><img class="operatorlogo" src="Ela.png" width="263px" height = "265px" /></a>
+           <a href=""><img class="operatorlogo" src="Echo.png" width="263px" height = "265px" /></a>
+         </p>
+       </div>
+       <div>
+         <p>
+            <a href=""><img class="operatorlogo" src="Maestro.png" width="263px" height = "265px" /></a>
+             <a href=""><img class="operatorlogo" src="Alibi.png" width="263px" height = "265px" /></a>
+              <a href=""><img class="operatorlogo" src="Vigil.png" width="263px" height = "265px" /></a>
+               <a href=""><img class="operatorlogo" src="Clash.png" width="263px" height = "265px" /></a>
+         </p>
+       </div>
+     </content>

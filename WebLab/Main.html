@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>WebLab2</title>
+    <style>
+    body{
+      width: 100%;
+      font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+      font-size: 1.6rem;
+      line-height: 1.5625em;
+      color: #fff;
+      background: #0d0d0d url('r6-siege-v3-bg.jpg') 0 0;
+      margin:0;
+      padding: 0;
+      }
+
+      #test {-webkit-animation: rainbow 5s linear 5s infinite alternate;}
+      @-webkit-keyframes rainbow {
+      0% {opacity: 1}
+      50% {opacity: 0.5}
+      100% {opacity: 1}
+      }
+
+nav {
+  background: black;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+}
+nav ul:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+nav a {
+  text-decoration: none;
+  display: block;
+  transition: .3s linear;
+}
+.topmenu > li {
+  float: left;
+  position: relative;
+  border-left: 1px solid black;
+}
+.topmenu > li:first-child {border-left: 0;}
+.topmenu > li > a {
+  padding: 20px 30px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #FEFDFD;
+  letter-spacing: 2px;
+}
+.topmenu > li > a.active,
+.submenu a:hover {color: #ddbe86;}
+.topmenu .fa,
+.submenu .fa {
+  margin-left: 5px;
+  color: inherit;
+}
+.submenu {
+  position: absolute;
+  z-index: 5;
+  min-width: 200px;
+  background: white;
+  border-top: 1px solid #CBCBCC;
+  border-left: 1px solid #CBCBCC;
+  border-right: 1px solid #CBCBCC;
+  visibility: hidden;
+  opacity: 0;
+  transform-origin: 0% 0%;
+  transform: rotateX(-90deg);
+  transition: .3s linear;
+}
+.submenu li {position: relative;}
+.submenu li a {
+  color: #282828;
+  padding: 10px 20px;
+  font-size: 13px;
+  border-bottom: 1px solid #CBCBCC;
+}
+.submenu .submenu {
+  position: absolute;
+  left: 100%;
+  top: -1px;
+  transition: .3s linear;
+}
+nav li:hover > .submenu {
+  transform: rotateX(0deg);
+  visibility: visible;
+  opacity: 1;
+
+}
+video{
+  width: 100%;
+  height: auto;
+}
+
+.secondpart{
+
+  background: #0d0d0d url('r6-siege-home-news-bg.jpg') 50% 50% no-repeat;
+  background-size: auto auto;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.firstpart{
+
+    background: #0d0d0d url('tncjqbo5h5w01.png') 50% 50% no-repeat;
+    background-size: auto auto;
+    background-size: cover;
+    overflow: hidden;
+
+}
+
+ a:hover{
+   background: #696969;
+ }
+
+.ramka{
+
+  border-left: 2px solid #ccc; /* Параметры линии */
+    margin-left: 20px; /* Отступ слева */
+    padding-left: 10px; /* Расстояние от линии до текста */
+}
+
+
+h4{
+  font-family: Arial, sans-serif ;
+  text-align: center;
+  margin-top: 1px;
+}
+
+.logo{
+  padding-top:15px;
+  padding-left:10px;
+}
+
+.footer{
+  text-align: center;
+  font-size: 1rem;
+  border:1px solid white inherit;
+
+}
+
+.fixmenu{
+  position:fixed;
+  width:100%;
+}
+
+
+    </style>
+    <header>
+      <div class="fixmenu">
+        <nav>
+          <ul class="topmenu">
+            <li class="logo">
+                <span id="test"><img src="r6-logo.png"/></span>
+            </li>
+            <li><a href="Main.html" class="active">Main<span class="fa fa-angle-down"></span></a></li>
+            <li><a href="">Matches</a>
+              <ul class="submenu">
+                <li><a href="">something1</a></li>
+                <li><a href="">something2<span class="fa fa-angle-down"></span></a></li>
+                <li><a href="">something3</a></li>
+              </ul>
+            </li>
+            <li><a href="">News</a></li>
+            <li><a href=" Operators.html " target="_blank">Operators</a></li>
+            <li><a href="">Admin</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <content>
+      <div>
+        <video autoplay="auto" loop="loop"><source src="Tom Clancy’s Rainbow Six Siege Official – E3 2015 White Masks Reveal – Angela Bassett [Europe].mp4" type="video/mp4"</video>
+      </div>
+    </div>
+
+    <div class="firstpart">
+      <h4>
+        What is R6 Siege?
+      </h4>
+      <blockquote>
+        <p class="ramka">
+          Tom Clancy's Rainbow Six Siege is a tactical shooter video game developed by Ubisoft Montreal and published by Ubisoft. It was released worldwide for Microsoft Windows, PlayStation 4, and Xbox One on December 1, 2015. The game puts heavy emphasis on environmental destruction and cooperation between players. Each player assumes control of an attacker or a defender in different gameplay modes such as rescuing a hostage and defusing a bomb. The title has no campaign but features a series of short missions that can be played solo. These missions have a loose narrative, focusing on recruits going through training to prepare them for future encounters with the White Masks, a terrorist group that threatens the safety of the world.
+          <br /><br /><br />
+          Tom Clancy's Rainbow Six Siege is a first-person shooter game, in which players control an operator from the Rainbow team. Different operators have different nationalities, weapons, and gadgets.[2] The game features an asymmetrical structure whereby the teams are not always balanced in their ability choices. The base Counter-Terrorism Units (CTUs) available for play are the American Hostage Rescue Team (referred to in-game as the FBI SWAT), the British SAS, the German GSG-9, the Russian Spetsnaz and the French GIGN, each of which has four operators per unit split between attackers and defenders
+        </p>
+      </blockquote>
+    </div>
+
+    <div class="secondpart">
+      <h4>
+       Who we are?
+      </h4>
+      <blockquote>
+
+        <p class="ramka">
+        Team Rainbow (also known as RAINBOW) is an elite international counterterrorist unit that falls under the direct supervision of NATO. The unit was formed to combat terrorist actions worldwide in a more effective way by assembling a team of elite counterterrorist operatives from nations all over the world. Since its formation in 1999, Rainbow has prevented several terrorist plots since its activation but was deactivated after 2010. The unit was recently reactivated under a new director codenamed "Six", to combat the White Masks and their widespread terrorist attacks.<br /><br />
+        A multinational special operations task force operating under NATO supervision, Rainbow was formed in 1999 to combat the rise of terrorist "Free Agents" following the collapse of the former Soviet Union. Since its formation, the unit is always run by a Director and Deputy Director. Operatives are recruited from the world's leading counter-terrorism and special forces units including Delta Force, GSG-9, Spetznaz and many others. Originally based in Hereford, England (real-life home of 22 SAS, the UK special forces unit), the unit was once led by General John Clark, who had the idea for Rainbow and was the unit's first Director. Rainbow is "blacker than black", its American funding directed through the Department of the Interior by Congress, then through The Pentagon's Office of Special Projects, with no connection whatsoever to the Intelligence Community. Less than a hundred people in Washington, D.C. know that Rainbow exists.
+        </p>
+      </blockquote>
+    </div>
+    <div class="thirdpart">
+
+
+    </div>
+  </content>
+  <footer>
+    <div class="footer">
+      <P>
+        Lab was done by Yurii Paneyko IR-22<br />
+        All rights reserved to Ubisoft Entertainment
+      </P>
+    </div>
+  </footer>
