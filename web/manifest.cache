@@ -1,0 +1,32 @@
+CACHE MANIFEST
+# 22-10-2018
+
+Fans.html
+index.html
+Matches.html
+News.html
+Operators.html
+error.html
+main.css
+img/900px-BlackDragons_logo.png
+img/900px-ENCE_eSports_infoboximage.png
+img/900px-PENTA_Sports-logo-notext.png
+img/1200px-Ubisoft_logo.svg.png
+img/282493.jpg
+img/Alibi.png
+img/aswang-drawing-gimo-1.png
+img/Attacker.png
+img/Blackbeard.png
+img/Buck.png
+img/Caveira.png
+img/Clash.png
+img/CLG-logo.png
+img/d4c6c8cc340a95c5_848xH.jpg
+img/Deffender.png
+img/Dokaebi.png
+
+NETWORK:
+*
+
+FALLBACK:
+error.html
