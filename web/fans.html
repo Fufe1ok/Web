@@ -15,6 +15,7 @@
     <meta name="keywords" content="curling, sport, ukraine">
 </head>
 
+
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark" style="background:black">
       <button class="navbar-toggler mr-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,60 +56,92 @@
       </div>
   </nav>
 
-  <div class="container">
-        <div class="main-text">
-             <div id="head">
-                <h1 id="header_content" class="text-center"><b>Додати новину</b></h1>
+<div class="container">
+<div id="content_wrapper">
+       <div id="head">
+                <h1 id="header_content" class="text-center "><b>Звернення фанів</b></h1>
+            </div>
+    <div class="container"  id="container">
+        <div id="reviewsList" class="main-text">
+
+            <div class="container border">
+                <br>
+                <p>
+                <br>Oh, new operators such cool
+                </p><br>
+                <span class="review-date">14.08.2018, 17:55:30</span>
+                <span class="review-author">R6:Fan1</span>
+            </div></br>
+
+            <div class="container border">
+                <br>
+                <p>
+                <br>yeah, Dokaebi is very cool
+                </p><br>
+                <span class="review-date">14.08.2018, 17:55:30</span>
+                <span class="review-author">R6:Fan2</span>
+            </div></br>
+
+            <div class="container border">
+                <br>
+                <p>
+                <br>I think that Cabeira will be the new imb
+                </p><br>
+                <span class="review-date">14.08.2018, 17:55:30</span>
+                <span class="review-author">R6:Fan3</span>
+            </div></br>
+
+            <div class="container border">
+                <br>
+                <p>
+                <br>+++
+                </p><br>
+                <span class="review-date">14.08.2018, 17:55:30</span>
+                <span class="review-author">R6:Fan4</span>
+            </div></br>
+
             </div>
 
-            <div class="input_form">
 
-            <div class="col-md-6">
-                <img id="example_picture" src="img/aswang-drawing-gimo-1.png" width="80%">
-            </div>
 
-            <form class="col-md-4" id="addPicture">
-                <label id="file-input" for="formForFile">Оберіть зображення</label>
-                <input id="formForFile" type="file" class="form-control-file" required>
-                <div class="valid-feedback">
-                Дані введені правильно
-                </div>
-                <div class="invalid-feedback">
-                Необхідно обрати зображення
+            <form id="form">
+                <h4>Написати звернення</h4>
+                <div class="form-group">
+                    <div class="col-xs-12">
+                        <textarea id="name" type="text" class="form-control" placeholder="Ім'я користувача" required></textarea>
+                        <div class="valid-feedback">
+                        Дані введені правильно
+                        </div>
+                        <div class="invalid-feedback">
+                            Ваше ім'я
+                        </div>
+                    </div>
+                    <br><br>
+                    <div class="col-xs-12">
+                        <textarea id="text" class="form-control" rows="7" placeholder="Текст звернення" required></textarea>
+                        <div class="valid-feedback">
+                        Дані введені правильно
+                        </div>
+                        <div class="invalid-feedback">
+                            Текст відгуку обов'язковий
+                        </div>
+                        <br>
+                        <input id="submitBtn" type="button" value="Надіслати" class="btn btn-primary">
+                    </div>
                 </div>
             </form>
-            </div>
-
-
-            <div class="col-md-12">
-                <form id="newsForm">
-                    <textarea id="caption" type="text" class="form-control" placeholder="Заголовок" required></textarea>
-                    <div class="valid-feedback">
-                    Дані введені правильно
-                    </div>
-                    <div class="invalid-feedback">
-                    Заголовок обов'язковий
-                    </div>
-                    <br>
-                    <textarea id="text" class="form-control" rows="5" placeholder="Введіть текст новини" required></textarea>
-                    <br>
-                    <div class="invalid-feedback">
-                    Текст новини обов'язковий
-                    </div>
-                    <div class="valid-feedback">
-                    </div>
-                    <button id="submit-btn" type="submit" type="button" class="btn btn-primary">Надіслати</button>
-                </form>
-            </div>
-
+    </div>
+</div>
+</div>
     <footer class="page-footer font-small">
-        <div class="footer-copyright text-center py-3">© 2018 Sevilla FC Copyright
+        <div class="footer-copyright text-center py-3">© R6:Siege
         </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="js/admin.js"></script>
+    <script src="js/fans.js"></script>
+
 </body>
 
 </html>
